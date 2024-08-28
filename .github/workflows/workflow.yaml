@@ -16,9 +16,9 @@ jobs:
 
       - name: Build of docker image
         run : |
-          docker build -t terezabisharyan/app-backend:$IMAGE_TAG .
+          docker build -t terezabisharyan/app-backend-2:$IMAGE_TAG .
 
       - name: Push image on DockerHub
         run : |
           docker login -u terezabisharyan -p ${{ secrets.DOCKER_PASSWORD }}
-          docker push terezabisharyan/app-backend:$IMAGE_TAG
+          docker push terezabisharyan/app-backend-2:$IMAGE_TAG
