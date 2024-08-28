@@ -1,8 +1,8 @@
 FROM node:alpine
 
-WORKDIR /back-app
+WORKDIR /server
 
-COPY package*.json yarn.lock ./back-app
+COPY package*.json yarn.lock ./server
 
 RUN yarn
 
